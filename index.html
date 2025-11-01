@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choclate Candy Boxes</title>
+    <style>
+         .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 2px solid green;
+      }
+       .box {
+        flex: 0 0 600px;
+        height: auto;
+        background-color: wheat;
+        margin: 5px;
+        font-size: xx-large;
+        color: black;
+        box-sizing: border-box;
+        padding: 2px;
+        margin: 2px;
+        font-size: medium;
+      }
+      .box img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <script src="/lib/jquery-3.7.1.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Chocolate Candy Boxes</h1>
+
+    <p>Select your options</p>
+
+    <p>
+        <button type="button" onclick="toggleCals()">Hide/Show Calories and Content</button>
+        <button type="button" onclick="randomSample()"> Random Sample</button>
+    </p>
+
+    <div class="wrapper">
+        <div class="box">
+            1
+            <p class="name">Plain Milk</p>
+            <p class="content">110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar</p>
+            <img src="assets/plain_milk.jpg" alt="Plain Milk">
+            
+        </div>
+         <div class="box">
+            2
+            <p class="name">Plain Dark</p>
+            <p class="content">	100 calories, smooth dark chocolate, ingredients: cocoa butter, milk, sugar</p>
+            <img src="assets/plain_dark.jpg" alt="Plain Dark">
+            
+        </div>
+         <div class="box">
+            3
+            <p class="name">Bailey's Cup</p>
+            <p class="content">90 calories, smooth milkchocolate with Bailey's Irish Cream filling, ingredients: cocoa butter, milk, sugar, Bailey's Cream filling</p>
+            <img src="assets/baileys_cup.jpg" alt="Bailey's Cup">
+            
+        </div>
+         <div class="box">
+            4
+            <p class="name">Cappuccino Cup</p>
+            <p class="content">130 calories, dark chocolate with coffee cream filling, ingredients: cocoa butter, milk, sugar, coffee-vanilla cream, grated coffee beans</p>
+            <img src="assets/cappuccino_cup.jpg" alt="Cappuccino Cup">
+            
+        </div>
+         <div class="box">
+            5
+            <p class="name">Nutter Butter</p>
+            <p class="content">	130 calories, smooth milk chocolate, peanut butter filling, ingredients: cocoa butter, milk, sugar</p>
+            <img src="assets/nutter_butter.jpg" alt="Nutter Butter">
+            
+        </div>
+         <div class="box">
+            6
+            <p class="name">Orange Fondant</p>
+            <p class="content">125 calories, dark chocolate with orange fondant filling, ingredients: cocoa butter, milk, sugar, orange cream, orange zest</p>
+            <img src="assets/orange_fondant.jpg" alt="Orange Fondant">
+            
+        </div>
+         <div class="box">
+            7
+            <p class="name">Pistachio Cup</p>
+            <p class="content">	140 calories, milk chocolate, almond butter filling, large pistachio, filling: cocoa butter, milk, sugar, nut butter, pistachio</p>
+            <img src="assets/pistachio_diamond.jpg" alt="Pistachio Cup">
+            
+        </div>
+         <div class="box">
+            8
+            <p class="name">Rum Barrel</p>
+            <p class="content">	110 calories, smooth dark chocolate with rum-coconut filling, ingredients: cocoa butter, milk, sugar, rum, coconut</p>
+            <img src="assets/rum_barrel.jpg" alt="Rum Barrel">
+            
+        </div>
+         <div class="box">
+            9
+            <p class="name">Toffee Crunch</p>
+            <p class="content">130 calories, dark chocolate, soft toffee filling, rock salt and peanut brittle, ingredients: cocoa butter, milk, sugar, toffee, salt, toffee brittle</p>
+            <img src="assets/toffee_crunch.jpg" alt="Toffee Crunch">
+            
+        </div>
+         <div class="box">
+            10
+            <p class="name">Plain Supreme</p>
+            <p class="content">	105 calories, smooth milk chocolate and dark chocolate side by side, ingredients: cocoa butter, milk, sugar     </p>
+            <img src="assets/plain_hybrid.jpg" alt="Plain Hybrid">
+            
+        </div>
+    </div>
+</body>
+</html>
